@@ -1,0 +1,27 @@
+query posts($per_page: Int!, $offset: Int!, $searchTerm: String) {
+  posts(
+      first: $per_page, 
+      skip: $offset, 
+      where: {
+        title_contains: $searchTerm
+      },
+      orderBy: createdAt_DESC
+    ) {
+    id
+    title
+    content {
+      html
+    }
+    keywords
+    publishedAt
+    slug
+  }
+}
+
+query postsCount {
+  postsConnection {
+    aggregate {
+      count
+    }
+  }
+}

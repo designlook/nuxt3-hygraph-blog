@@ -1,0 +1,7 @@
+{
+  "global": {
+    "hello": "Hello World!",
+    "no": "Non",
+    "yes": "Oui"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "ajaxgenius",
+  "version": "1.0.0",
+  "description": "ajax genius",
+  "author": "Scott Yu",
+  "private": true,
+  "license": "MIT License",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nodemon --watch server/api --ext js,mjs,json,ts --exec nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "nuxt start",
+    "heroku-postbuild": "nuxt build",
+    "format": "prettier --write \"**/*.js\" \"**/*.vue\" "
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.10",
+    "@pinia/nuxt": "^0.4.6",
+    "daisyui": "^2.46.1",
+    "nuxt-graphql-client": "^0.2.25",
+    "pinia": "^2.0.28",
+    "vue-gtag": "^2.0.1",
+    "vue-router": "^4.1.6",
+    "vue3-highlightjs": "^1.0.5"
+  },
+  "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
+    "@nuxtjs/i18n": "^8.0.0-beta.7",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "nodemon": "^2.0.20",
+    "nuxt": "^3.0.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.2",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4"
+  }
+}
